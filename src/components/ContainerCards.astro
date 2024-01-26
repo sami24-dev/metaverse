@@ -1,0 +1,77 @@
+---
+import Card from './Card.astro';
+import Span from './Span.astro';
+---
+
+<section class='w-4/5 mt-32'>
+  <article class='flex flex-col justify-center items-center gap-y-2'>
+    <h2 class='text-3xl'>
+      How does the <Span
+        className='text-3xl'
+        title='Metaverse work'
+      />
+    </h2>
+    <p
+      class='text-base text-pretty text-center font-light text-[rgba(255,_255,_255,_0.80)]'
+    >
+      Adipiscing at in tellus integer. Pellentesque massa placerat duis <br />
+      ultricies. Venenatis cras
+    </p>
+  </article>
+  <article class='flex flex-wrap justify-center items-center gap-6 mt-24'>
+    <Card
+      title='Discuss with Colleagues'
+      description='Working online is the same experience as work ing in an office. This will be. achieved with..'
+    >
+      <img
+        src='public/imgCard1.svg'
+        alt='hombre experimentando las gafas de realidad virtual'
+      />
+    </Card>
+    <Card
+      title='Virtual Reality Concert'
+      description='Watching concerts virtually is one of the things that can be done in cyberspace..'
+    >
+      <img
+        src='public/imgCard2.svg'
+        alt='dj bailando'
+      />
+    </Card>
+    <Card
+      title='Playing Games'
+      description='For gamers, the metaverse could be an interesting platform of choice for the..'
+    >
+      <img
+        src='public/imgCard3.svg'
+        alt='mujer manejando un auto experimentando las gafas de realidad virtual'
+      />
+    </Card>
+    <Card
+      title='Online Travel'
+      description='With cyberspace, online travel is certainly not impossible. We can do this with the help of..'
+    >
+      <img
+        src='public/imgCard4.svg'
+        alt='hombre experimentando las gafas de realidad virtual'
+      />
+    </Card>
+    <Card
+      title='Artworks'
+      description='In the past, works of art such as paintings could only be seen in the real world..'
+    >
+      <img
+        src='public/imgCard5.svg'
+        alt='hombre experimentando las gafas de realidad virtual'
+      />
+    </Card>
+    <Card
+      title='Digital Clothing'
+      description='The community has also been active with the emergence of paintings or drawings..'
+    >
+      <img
+        src='public/imgCard6.svg'
+        alt='hombre experimentando las gafas de realidad virtual'
+      />
+    </Card>
+  </article>
+</section>

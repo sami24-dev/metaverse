@@ -1,0 +1,62 @@
+---
+import Button from './Button.astro';
+import CounterProgresive from './CounterProgresive.astro';
+import Span from './Span.astro';
+---
+
+<section class='flex justify-between w-full'>
+  <article
+    class='flex flex-col items-start justify-center gap-4 pl-[8.3rem] w-1/2'
+  >
+    <h1 class='text-4xl leading-10 text-balance'>
+      Explore the future of the <Span
+        className='text-5xl font-bold'
+        title='Metaverse'
+      />
+    </h1>
+    <p class='text-xl font-normal text-pretty'>
+      Let's explore and create your experience with metaverse.
+    </p>
+    <div class='flex gap-3 mt-3'>
+      <Button
+        title='Get Started'
+        classSpan='bg-[#010101]'
+      />
+      <Button
+        title='Explore Now'
+        classSpan='bg-[#010101]'
+      />
+    </div>
+    <div class='flex gap-x-10 mt-3'>
+      <CounterProgresive
+        counter='29'
+        title='Artworks'
+      />
+      <CounterProgresive
+        counter='18'
+        title='Artists'
+      />
+      <CounterProgresive
+        counter='25'
+        title='Auction'
+      />
+    </div>
+  </article>
+  <article class='relative w-1/2 mt-16'>
+    <img
+      class='object-cover aspect-auto'
+      src='public/image.webp'
+      alt=''
+    />
+    <img
+      class='absolute top-[120px] hidden md:block'
+      src='public/Vector.webp'
+      alt='Tres estrellas'
+    />
+    <img
+      class='absolute top-[246px] right-[149px]'
+      src='public/Rectangle-69.svg'
+      alt='sombra'
+    />
+  </article>
+</section>

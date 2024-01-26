@@ -1,0 +1,31 @@
+---
+import Button from './Button.astro';
+import Span from './Span.astro';
+---
+
+<section class='flex justify-between z-50 w-[80%]'>
+  <article class='w-1/2'>
+    <img
+      src='public/Group48095505.svg'
+      alt=''
+    />
+  </article>
+  <article class='flex flex-col justify-center items-start gap-4 w-1/2 pl-20'>
+    <h2 class='text-4xl'>
+      What is <Span
+        className='text-4xl'
+        title='Metaverse'
+      />
+    </h2>
+    <p class='text-lg text-pretty text-[rgba(255,_255,_255,_0.80)]'>
+      Adipiscing at in tellus integer. Pellentesque massa placerat duis
+      ultricies lacus. Nisi porta lorem mollis aliquam ut porttitor leo.
+      Venenatis cras.
+    </p>
+    <Button
+      classButton='mt-5'
+      title='Know More'
+      classSpan='bg-[#010101]'
+    />
+  </article>
+</section>

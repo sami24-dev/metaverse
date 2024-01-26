@@ -1,0 +1,30 @@
+---
+import Button from './Button.astro';
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+---
+
+<article
+  class='flex flex-col items-start gap-4 w-80 max-w-96 bg-[#090823] p-6 rounded-tr-3xl rounded-bl-3xl'
+>
+  <header>
+    <slot />
+  </header>
+  <main>
+    <h3>{title}</h3>
+    <p class='text-sm text-[rgba(255,_255,_255,_0.80)]'>{description}</p>
+  </main>
+  <footer class='flex gap-x-4 mt-3'>
+    <Button
+      classSpan='bg-[#090823]'
+      title='Try now'
+    />
+    <Button
+      classSpan='bg-[#090823]'
+      title='Explore now'
+    />
+  </footer>
+</article>

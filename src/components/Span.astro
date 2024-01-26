@@ -1,0 +1,22 @@
+---
+interface Props {
+  className: string;
+  title: string;
+}
+const { className, title } = Astro.props;
+---
+
+<span class=`${className}`>
+  {title}
+</span>
+<style>
+  span {
+    background: var(
+      --2,
+      linear-gradient(97deg, #f86cf8 12.04%, #64cef5 81.84%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>

@@ -1,0 +1,18 @@
+---
+interface Props {
+  counter: string;
+  title: string;
+}
+const { counter, title } = Astro.props;
+---
+
+<ul>
+  <li class='text-xl'>{counter}k+</li>
+  <li class='title text-xs'>{title}</li>
+</ul>
+
+<style>
+  .title {
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
