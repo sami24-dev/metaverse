@@ -1,12 +1,13 @@
 ---
 interface Props {
+  classUl?: string;
   counter: string;
   title: string;
 }
-const { counter, title } = Astro.props;
+const { classUl, counter, title } = Astro.props;
 ---
 
-<ul>
+<ul class=`${classUl}`>
   <li class='text-xl'>{counter}k+</li>
   <li class='title text-xs'>{title}</li>
 </ul>

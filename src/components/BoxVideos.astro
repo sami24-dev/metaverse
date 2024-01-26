@@ -1,0 +1,25 @@
+---
+import Box from './Box.astro';
+import Span from './Span.astro';
+---
+
+<section
+  id='about'
+  class='flex flex-col justify-center items-center md:w-full mt-32'
+>
+  <article class='flex flex-col justify-center md:items-center gap-y-2 w-4/5'>
+    <h2 class='text-3xl'>
+      Our Latest <Span
+        className='text-3xl'
+        title='Activity'
+      />
+    </h2>
+    <p class='text-base text-pretty md:text-center font-light'>
+      Adipiscing at in tellus integer. Pellentesque massa placerat <br /> duis ultricies.
+      Venenatis cras
+    </p>
+  </article>
+  <article class='flex justify-center items-center w-full'>
+    <Box rute='public/video1.mp4' />
+  </article>
+</section>

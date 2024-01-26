@@ -32,7 +32,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <div class='flex flex-col items-center w-full'>
+    <div class='flex flex-col items-center w-full h-auto'>
       <slot />
     </div>
   </body>
@@ -44,10 +44,9 @@ const { title } = Astro.props;
   body {
     margin: 0;
     padding: 0;
-    background-image: url(../images/Group-34.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #010101;
+    background-image: url(../images/Group-34.svg);
+    background-repeat: no-repeat;
     font-family: 'Orbitron Variable', sans-serif;
     color: #fff;
   }

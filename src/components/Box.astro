@@ -1,0 +1,23 @@
+---
+interface Props {
+  rute: string;
+}
+const { rute } = Astro.props;
+---
+
+<div
+  class='box w-4/5 object-cover aspect-video mt-10 rounded-3xl p-[0.05rem] relative'
+>
+  <video
+    class='rounded-3xl'
+    src={rute}
+    controls
+  >
+  </video>
+</div>
+
+<style>
+  .box {
+    background-image: linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%);
+  }
+</style>
