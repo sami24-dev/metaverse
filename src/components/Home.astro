@@ -1,4 +1,5 @@
 ---
+import Image_one from '../images/image.webp';
 import Button from './Button.astro';
 import CounterProgresive from './CounterProgresive.astro';
 import Span from './Span.astro';
@@ -55,8 +56,8 @@ import Span from './Span.astro';
   <article class='md:relative w-[60%] md:w-1/2 mt-16'>
     <img
       class='object-cover aspect-auto'
-      src='public/image.webp'
-      alt=''
+      src={Image_one.src}
+      alt='mujer con gafas de realidad virtual'
     />
     <img
       class='absolute top-[120px] hidden md:block'
