@@ -1,6 +1,7 @@
 ---
 import '@fontsource-variable/orbitron';
 import '@fontsource/poppins';
+import Fabicon from '../images/Vector.webp';
 interface Props {
   title: string;
 }
@@ -23,7 +24,7 @@ const { title } = Astro.props;
     <link
       rel='icon'
       type='image/svg+xml'
-      href='/favicon.svg'
+      href={Fabicon.src}
     />
     <meta
       name='generator'
