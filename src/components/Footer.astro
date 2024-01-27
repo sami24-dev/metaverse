@@ -1,11 +1,15 @@
 ---
+import Facebook from '../images/Facebook.svg';
+import Instagram from '../images/Instagram.svg';
+import LinkedIn from '../images/LinkedIn.svg';
+import Twitter from '../images/TwitterSquared.svg';
 import Span from './Span.astro';
 ---
 
 <footer
   class='flex flex-col md:flex-row justify-center items-start gap-10 bg-[#090823] mt-32 p-20 w-full'
 >
-  <div class='w-[31%]'>
+  <div class='w-[33%]'>
     <h2>
       <Span
         className='text-5xl font-bold'
@@ -40,26 +44,26 @@ import Span from './Span.astro';
     <li class='flex gap-x-3'>
       <a href=''>
         <img
-          src='public/LinkedIn.svg'
-          alt=''
+          src={LinkedIn.src}
+          alt='link de linkedin'
         />
       </a>
       <a href=''>
         <img
-          src='public/TwitterSquared.svg'
-          alt=''
+          src={Twitter.src}
+          alt='link de twitter'
         />
       </a>
       <a href=''
         ><img
-          src='public/Instagram.svg'
-          alt=''
+          src={Instagram.src}
+          alt='link de Instagram'
         />
       </a>
       <a href=''>
         <img
-          src='public/Facebook.svg'
-          alt=''
+          src={Facebook.src}
+          alt='link de Facebook'
         />
       </a>
     </li>
