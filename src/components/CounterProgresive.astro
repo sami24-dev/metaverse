@@ -1,19 +1,26 @@
 ---
 interface Props {
-  classUl?: string;
-  counter: string;
-  title: string;
+	classUl?: string;
+	counter: string;
+	title: string;
 }
 const { classUl, counter, title } = Astro.props;
 ---
 
 <ul class=`${classUl}`>
-  <li class='text-xl'>{counter}k+</li>
-  <li class='title text-xs'>{title}</li>
+	<li class='text-xl'>
+		<span
+			class='counter tabular-nums'
+			data-amount-max={counter}>
+			00
+		</span>
+		<span>k+</span>
+	</li>
+	<li class='title text-xs'>{title}</li>
 </ul>
-
+<script src='./counterprogresive.js'></script>
 <style>
-  .title {
-    font-family: 'Poppins', sans-serif;
-  }
+	.title {
+		font-family: 'Poppins', sans-serif;
+	}
 </style>
